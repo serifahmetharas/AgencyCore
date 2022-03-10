@@ -1,0 +1,18 @@
+﻿@model CoreAgency.Models.Agency
+@{
+    ViewData["Title"] = "GetAgency";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+@using (Html.BeginForm("GetAgency", "Agency", FormMethod.Post))
+{
+    <br/>
+    <b>Agency Id</b>
+    @Html.TextBoxFor(x => x.Id, new { @class = "form-control" })
+    <br />
+    <b>Agency Name</b>
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info" style="background-color:#ebdede; color:black">Update</button>
+}
+
