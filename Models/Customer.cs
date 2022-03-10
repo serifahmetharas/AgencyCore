@@ -14,6 +14,6 @@ namespace CoreAgency.Models
         public string LastName { get; set; }
         public string City { get; set; }
         
-
+        public Agency Agency { get; set; }
     }
 }

@@ -1,0 +1,37 @@
+﻿@using CoreAgency.Models
+@model List<Customer>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>LastName</th>
+        <th>City</th>
+        <th>Agency</th>
+        <th>Delete</th>
+        <th>Update</th>
+        
+    </tr>
+    @foreach (var customer in Model)
+    {
+        <tr>
+            <td>@customer.Id</td>
+            <td>@customer.Name</td>
+            <td>@customer.LastName</td>
+            <td>@customer.City</td>
+            <td></td>
+            <td><a href="/Customer/DeleteCustomer/?Id=@customer.Id" class="btn btn-danger">Delete</a></td>
+            <td><a href="/Customer/GetAgency/?Id=@customer.Id" class="btn btn-success">Update</a></td>
+            
+
+        </tr>
+    }
+
+</table>
+<td><a href="/Agency/NewAgency/" class="btn btn-primary">New Agency</a></td>
+

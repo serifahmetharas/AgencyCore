@@ -45,10 +45,10 @@ namespace CoreAgency.Controllers
             return View("GetAgency",agency);
         }
 
-        public IActionResult UpdateAgency(Agency agency)
+        public IActionResult UpdateAgency(Agency ag)
         {
-            var willupdate = db.Agencies.Find(agency.Id);
-            willupdate.Name = agency.Name;
+            var willupdate = db.Agencies.Find(ag.Id);
+            willupdate.Name = ag.Name;
             db.SaveChanges();
             return RedirectToAction("Index");
 
