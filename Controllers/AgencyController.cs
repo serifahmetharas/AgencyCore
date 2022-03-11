@@ -1,19 +1,19 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AgencyCore.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CoreAgency.Models;
 
-namespace CoreAgency.Controllers
+namespace AgencyCore.Controllers
 {
     public class AgencyController : Controller
     {
         Context db = new Context();
         public IActionResult Index()
         {
-            var agencies = db.Agencies.ToList();
-            return View(agencies);
+            var values = db.Agencies.ToList();
+            return View(values);
         }
 
         [HttpGet]
@@ -27,7 +27,7 @@ namespace CoreAgency.Controllers
             db.Agencies.Add(agency);
             db.SaveChanges();
             return RedirectToAction("Index");
-            
+
         }
 
         public IActionResult DeleteAgency(int id)
@@ -42,19 +42,17 @@ namespace CoreAgency.Controllers
         public IActionResult GetAgency(int id) // Guncelleme içi gelmesini sağladım.
         {
             var agency = db.Agencies.Find(id);
-            return View("GetAgency",agency);
+            return View("GetAgency", agency);
         }
 
         public IActionResult UpdateAgency(Agency ag)
         {
-            var willupdate = db.Agencies.Find(ag.Id);
-            willupdate.Name = ag.Name;
+            var willupdate = db.Agencies.Find(ag.AgencyId);
+            willupdate.AgencyName = ag.AgencyName;
             db.SaveChanges();
             return RedirectToAction("Index");
 
-            
+
         }
-
-
     }
 }

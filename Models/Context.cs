@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CoreAgency.Models
+namespace AgencyCore.Models
 {
-    public class Context : DbContext
+    public class Context : DbContext 
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=(localdb)\\MSSQLLocalDB; database=agencydb; integrated security=true;");
+            optionsBuilder.UseSqlServer("server=(localdb)\\MSSQLLocalDB; database=agencycoredb; integrated security=true;");
         }
 
         public DbSet<Agency> Agencies { get; set; }

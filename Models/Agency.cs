@@ -4,15 +4,13 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CoreAgency.Models
+namespace AgencyCore.Models
 {
     public class Agency
     {
         [Key]
-        public int Id { get; set; }
-        public string Name { get; set; }
-
-        public List<Customer> Customers { get; set; }
-
+        public int AgencyId { get; set; }
+        public string AgencyName { get; set; }
+        public IList<Customer> Customers { get; set; }
     }
 }

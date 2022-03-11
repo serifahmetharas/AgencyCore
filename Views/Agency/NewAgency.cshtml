@@ -1,13 +1,13 @@
-﻿@model CoreAgency.Models.Agency
+﻿@model AgencyCore.Models.Agency
 @{
     ViewData["Title"] = "NewAgency";
     Layout = "~/Views/Shared/_TestLayout.cshtml";
 }
-<br/>
+<br />
 <form class="form-group" method="post">
     <b>Agency Name</b>
-    @Html.TextBoxFor(x=>x.Name, new { @class = "form-control" })
-    <br/>
+    @Html.TextBoxFor(x => x.AgencyName, new { @class = "form-control" })
+    <br />
     <button class="btn btn-info">Add</button>
 </form>
 
