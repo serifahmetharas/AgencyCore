@@ -1,0 +1,24 @@
+﻿@model AgencyCore.Models.Customer
+@{
+    ViewData["Title"] = "NewCustomer";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<br />
+<form class="form-group" method="post">
+    <b>Customer Name</b>
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <br />
+    <b>Customer LastName</b>
+    @Html.TextBoxFor(x => x.LastName, new { @class = "form-control" })
+    <br />
+    <b>City</b>
+    @Html.TextBoxFor(x => x.City, new { @class = "form-control" })
+    <br />
+    <b>Agency</b>
+    @Html.DropDownListFor(x=>x.Agency.AgencyId,(List<SelectListItem>)ViewBag.vls,new { @class="form-control" })
+    <br />
+
+    <button class="btn btn-info">Add</button>
+</form>
+

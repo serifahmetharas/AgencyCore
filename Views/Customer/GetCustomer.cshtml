@@ -1,0 +1,23 @@
+﻿@model AgencyCore.Models.Customer
+@{
+    ViewData["Title"] = "GetCustomer";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+@using (Html.BeginForm("UpdateCustomer", "Customer", FormMethod.Post))
+{
+    <b>Customer Name</b>
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <br />
+    <b>Customer LastName</b>
+    @Html.TextBoxFor(x => x.LastName, new { @class = "form-control" })
+    <br />
+    <b>City</b>
+    @Html.TextBoxFor(x => x.City, new { @class = "form-control" })
+    <br />
+    <b>Agency</b>
+    @Html.TextBoxFor(x => x.Agency.AgencyName, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info" style="background-color:#ebdede; color:black">Update</button>
+}
+

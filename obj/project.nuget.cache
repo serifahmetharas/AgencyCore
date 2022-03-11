@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fDjUdNS8+vFx9OtgtJeDcEEuXltq8AaI9rMd6pr7G3ZCFWbuSevgiG+gFcaims/DXkhseg3buQzECEtSKK6wdw==",
+  "dgSpecHash": "2KZIIr6fmyDV9oSaOjMSB6oNUtECSzvBt4o1B4HXZUeAOA/yUEIrREzHzTqaAk/0pVOusCU6ixQSHdSS9KoE2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\source\\repos\\AgencyCore\\AgencyCore.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\source\\repos\\GunkomProject\\CoreAgency\\CoreAgency\\AgencyCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

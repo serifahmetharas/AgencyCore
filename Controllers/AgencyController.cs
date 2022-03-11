@@ -54,5 +54,13 @@ namespace AgencyCore.Controllers
 
 
         }
+
+        public IActionResult AgencyDetail(int id)
+        {
+            var values = db.Customers.Where(x => x.AgencyId == id).ToList();
+            var agencyname = db.Agencies.Where(x => x.AgencyId == id).Select(y => y.AgencyName).FirstOrDefault();
+            ViewBag.nameag = agencyname;
+            return View(values);
+        }
     }
 }

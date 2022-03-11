@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\source\\repos\\AgencyCore\\AgencyCore.csproj": {}
+    "C:\\Users\\ASUS\\source\\repos\\GunkomProject\\CoreAgency\\CoreAgency\\AgencyCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\source\\repos\\AgencyCore\\AgencyCore.csproj": {
+    "C:\\Users\\ASUS\\source\\repos\\GunkomProject\\CoreAgency\\CoreAgency\\AgencyCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\AgencyCore\\AgencyCore.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\GunkomProject\\CoreAgency\\CoreAgency\\AgencyCore.csproj",
         "projectName": "AgencyCore",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\AgencyCore\\AgencyCore.csproj",
+        "projectPath": "C:\\Users\\ASUS\\source\\repos\\GunkomProject\\CoreAgency\\CoreAgency\\AgencyCore.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\AgencyCore\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\source\\repos\\GunkomProject\\CoreAgency\\CoreAgency\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
