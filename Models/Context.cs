@@ -15,5 +15,6 @@ namespace AgencyCore.Models
 
         public DbSet<Agency> Agencies { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Admin> Admins { get; set; }
     }
 }

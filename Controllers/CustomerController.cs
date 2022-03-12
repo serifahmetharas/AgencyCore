@@ -1,4 +1,5 @@
 ﻿using AgencyCore.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +13,7 @@ namespace AgencyCore.Controllers
     public class CustomerController : Controller
     {
         Context db = new Context();
+        [Authorize]
         public IActionResult Index()
         {
             var values = db.Customers.Include(x=>x.Agency).ToList();
